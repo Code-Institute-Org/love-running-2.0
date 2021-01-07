@@ -185,12 +185,13 @@ hr {
 #times div {
     color: #fafafa;
     background-color: rgba(0,0,0, .6);
-    width: 19%;
+    width: 20%;
     height: 300px;
     float: left;
     padding: 30px 0 0 10px;
     text-align: center;
-    margin: 2px;
+    border: 2px solid white;
+    box-sizing: border-box;
 }
 
 #times h2 {
