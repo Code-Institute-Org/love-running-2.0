@@ -8,7 +8,7 @@
 
 body{
     font-family: Lato;
-    color: #777777;
+    color: #3a3a3a;
 }
 
 h2{
@@ -45,11 +45,11 @@ h2{
 }
 
 #menu a:hover{
-    border-bottom: 1px solid #777777;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .active{
-    border-bottom: 1px solid #777777;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 #hero-image{
@@ -125,7 +125,7 @@ h2{
 }
 
 hr {
-    border-top: 1px solid #777777;
+    border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 5px 0;
 }
@@ -215,7 +215,7 @@ footer{
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #777777;
+    color: #3a3a3a;
 }
 
 #photo {
@@ -269,7 +269,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 943px){
+@media screen and (max-width: 950px){
 
     #menu{
         clear: left;
