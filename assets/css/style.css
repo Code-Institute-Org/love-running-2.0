@@ -68,7 +68,7 @@ h1, h2{
 #hero-image{
     height:600px;
     width: 100%;
-    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
+    background: url("../images/hero-image.png") no-repeat center center;
 
     /* Animates zoom effect on loading the page */
     animation-name: hero-zoom;
@@ -180,7 +180,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png') no-repeat center center;
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
@@ -188,7 +188,7 @@ hr {
 /* Event times */
 
 #times{
-    background-image: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
+    background-image: url('../images/dublin-city.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -251,14 +251,14 @@ footer{
 
 .form-section {
     clear: left;
-    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background: url("../images/signup-image.png");
     background-size: cover;
     background-position: center;
     height: 900px;
 }
 
 .signup-form {
-    margin-top: 150px;
+    margin: 150px 10% 0 0;
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
     max-width: 400px;
