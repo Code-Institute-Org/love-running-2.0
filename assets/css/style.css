@@ -11,12 +11,16 @@ body{
     color: #3a3a3a;
 }
 
-h2{
+/* Headings */
+
+h1, h2{
     font-family: Oswald;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #555555;
 }
+
+/* header */
 
 #logo{
     float: left;
@@ -52,15 +56,7 @@ h2{
     border-bottom: 1px solid #3a3a3a;
 }
 
-#hero-image{
-    height:600px;
-    width: 100%;
-    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
-
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
+/* Hero image and cover text */
 
 #hero-outer{
     height:600px;
@@ -69,6 +65,18 @@ h2{
     position: relative;
 }
 
+#hero-image{
+    height:600px;
+    width: 100%;
+    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
+
+    /* Animates zoom effect on loading the page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* Creates the level of zoom for hero image */
 @keyframes hero-zoom {
     from{
         transform: scale(1);
@@ -102,6 +110,8 @@ h2{
     position: absolute;
 
 }
+
+/* Club ethos */
 
 #club-ethos{
     height: 600px;
@@ -150,6 +160,8 @@ hr {
     text-align: right;
 }
 
+/* Club ethos center image */
+
 #welcome {
     margin: 20px 0;
     text-align: center;
@@ -172,6 +184,8 @@ hr {
     height: 100%;
     border-radius: 50%;
 }
+
+/* Event times */
 
 #times{
     background-image: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
@@ -198,6 +212,8 @@ hr {
     color: #fafafa;
 }
 
+/* Footer */
+
 footer{
     height: 150px;
 }
@@ -218,6 +234,8 @@ footer{
     color: #3a3a3a;
 }
 
+/* Gallery Photos */
+
 #photo {
     clear: both;
     line-height: 0;
@@ -229,6 +247,19 @@ footer{
     width: 100%;
 }
 
+/* Form */
+
+.form-section {
+    clear: both;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1200px wide and down */
 @media screen and (max-width: 1200px){
     #club-ethos{
         width: 65%;
@@ -269,6 +300,7 @@ footer{
     }
 }
 
+/* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px){
 
     #menu{
@@ -308,6 +340,7 @@ footer{
     }
 }
 
+/* For small screens sizes from 800px wide and down */
 @media screen and (max-width: 800px){
     #photo{
         column-count: 2;
