@@ -11,16 +11,14 @@ body{
     color: #3a3a3a;
 }
 
-/* Headings */
+/* headings and logo */
 
 h1, h2{
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #555555;
+    color: #252525;
 }
-
-/* header */
 
 #logo{
     float: left;
@@ -28,9 +26,10 @@ h1, h2{
     margin-left: 30px;
 }
 
+/* navigation links */
+
 #menu{
     font-size: 110%;
-    list-style-type: none;
     letter-spacing: 4px;
 }
 
@@ -40,6 +39,7 @@ h1, h2{
 
 #menu li {
     float: right;
+    list-style-type: none;
     margin-right: 30px;
 }
 
