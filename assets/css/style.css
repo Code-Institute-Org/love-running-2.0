@@ -127,7 +127,6 @@ h1, h2{
     padding-top: 30px;
     width: 33%;
     float: right;
-    text-align: right;
 }
 
 #center-about {
@@ -155,6 +154,10 @@ hr {
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
+}
+
+.right-about-heading p {
+    text-align: right;
 }
 
 .right-about-heading h2 {
