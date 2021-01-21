@@ -338,9 +338,6 @@ footer{
         width: 100%;
         clear: both;
         height: 150px;
-        border-style: solid;
-        border-bottom-width: 1px;
-        border-bottom-color: #fff; 
         padding: 0;
     }
 
