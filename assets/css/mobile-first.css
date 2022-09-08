@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    color: #3a3a3a;
+}
+
+/* headings and logo */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
+
+#logo {
+    font-size: 280%;
+    margin-left: 30px;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#logo {
+    line-height: 75px;
+}
+
+#menu li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Hero image and cover text */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center;
+
+    /* Animates zoom effect on loading the page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* Creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#cover-text,
+#cover-text h2 {
+    color: #ffffff;
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 80%;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 20px;
+    left: 0;
+
+    position: absolute;
+
+}
+
+/* Club ethos */
+
+#club-ethos {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#right-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#center-about {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: inherit;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.right-about-heading {
+    width: inherit;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.left-about-heading p,
+.right-about-heading p {
+    padding: 0 20px 0 20px;
+}
+
+/* Club ethos center image */
+
+#welcome {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 280%;
+}
+
+#circle-container {
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#circle-cover-bg {
+    background: url('../images/ethos-center-image.jpg') no-repeat top center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Event times */
+
+#times {
+    background-image: url('../images/dublin-city.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+#times h2 {
+    color: #fafafa;
+}
+
+/* Footer */
+
+.social-networks {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/* Gallery Photos */
+
+#photo {
+    clear: both;
+    line-height: 0;
+    column-count: 1;
+    column-gap: 0px;
+}
+
+#photo img {
+    width: 100%;
+}
+
+/* Form */
+
+.form-section {
+    clear: left;
+    background: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+}
+
+.signup-form {
+    margin: 20px 10% 0 10%;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+.signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #f16c6b;
+    color: #fafafa;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #f16c6b;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    body {
+        box-sizing: border-box;
+        min-height: 100vh;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    #menu {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    #photo {
+        column-count: 2
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    #cover-text {
+        width: 300px;
+    }
+
+    #photo {
+        column-count: 3
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: 60%;
+    }
+    
+    .right-about-heading {
+        text-align: end;
+        align-self: flex-end;
+    }
+
+    .form-section {
+        box-sizing: border-box;
+        display: flex;
+        height: 80vh;   
+    }
+
+    .signup-form {
+        min-height: 50%;
+        position: relative;
+        margin: 20%;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #about {
+        flex-direction: row;
+    }
+
+    #center-about {
+        order: 0
+    }
+
+    #right-about {
+        order: 1;
+        align-items: flex-end;
+    }
+
+    .right-about-heading {
+        align-self: flex-start;
+    }
+
+    .left-about-heading {
+        align-self: flex-end;
+    }
+
+    #circle-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #times {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #times div {
+        flex-grow: 1;
+        height: 300px;
+    }
+
+    #photo {
+        column-count: 4;
+    }
+}
