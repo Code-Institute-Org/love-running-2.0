@@ -413,12 +413,14 @@ hr {
     #times {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+    }
+
+    #times div {
+        flex-grow: 1;
+        height: 300px;
     }
 
     #photo {
         column-count: 4;
     }
-
-    
 }
