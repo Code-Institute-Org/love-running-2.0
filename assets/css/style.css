@@ -13,6 +13,15 @@ body{
 
 /* headings and logo */
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+}
+
 h1, h2{
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
@@ -21,7 +30,6 @@ h1, h2{
 }
 
 #logo{
-    float: left;
     font-size: 280%;
     margin-left: 30px;
 }
@@ -31,6 +39,8 @@ h1, h2{
 #menu{
     font-size: 110%;
     letter-spacing: 4px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #logo, #menu{
@@ -38,7 +48,6 @@ h1, h2{
 }
 
 #menu li {
-    float: right;
     list-style-type: none;
     margin-right: 30px;
 }
@@ -117,21 +126,31 @@ h1, h2{
     height: 600px;
 }
 
+#about {
+    display: flex;
+    justify-content: center;
+}
+
 #left-about{
     padding-top: 30px;
     width: 33%;
-    float: left;
+    order: -1;
+    display: flex;
+    flex-direction: column;
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
-    float: right;
+    order: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #center-about {
     width: 33%;
     margin: 0 auto;
+    order: 0;
 }
 
 hr {
@@ -142,7 +161,7 @@ hr {
 
 .left-about-heading {
     width: 60%;
-    float: right;
+    align-self: flex-end;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
@@ -150,7 +169,7 @@ hr {
 
 .right-about-heading {
     width: 60%;
-    float: left;
+    align-self: flex-start;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
@@ -198,6 +217,7 @@ hr {
     background-position: center;
     width: 100%;
     overflow: hidden;
+    display: flex;
 }
 
 #times div {
@@ -205,7 +225,6 @@ hr {
     background-color: rgba(0,0,0, .6);
     width: 20%;
     height: 300px;
-    float: left;
     padding: 30px 0 0 10px;
     text-align: center;
     border: 2px solid white;
@@ -321,17 +340,23 @@ footer{
         margin-top: 0;
     }
 
+    #about {
+        display: block;
+    }
+
     #left-about, #right-about {
         width:100%;
-        float:left;
         padding: 0;
     }
 
     #center-about{
         clear: both;
         width: 100%;
-        float: left;
         padding: 0;
+    }
+
+    #times {
+        display: block;
     }
 
     #times div {
@@ -348,13 +373,16 @@ footer{
 
 /* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
     #menu{
-        clear: left;
-        float: left;
         margin-left: 30px; 
         margin-bottom: 20px;
         line-height: 25px;
+        flex-direction: row-reverse;
     }
 
     #cover-text{
