@@ -44,10 +44,10 @@ h2 {
     display: flex;
     flex-direction: column-reverse;
     margin-left: 30px;
+    margin-bottom: 30px;
 }
 
-#logo,
-#menu {
+#logo{
     line-height: 75px;
 }
 
@@ -262,7 +262,7 @@ hr {
 #photo {
     clear: both;
     line-height: 0;
-    column-count: 4;
+    column-count: 1;
     column-gap: 0px;
 }
 
@@ -276,17 +276,13 @@ hr {
     clear: left;
     background: url("../images/signup-image.webp");
     background-size: cover;
-    background-position: center;
-    height: 900px;
+    background-position: 75%;
 }
 
 .signup-form {
-    margin: 150px 10% 0 0;
+    margin: 20px 10% 0 10%;
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
-    max-width: 400px;
-    position: absolute;
-    left: 10%;
     padding: 30px;
 }
 
