@@ -40,6 +40,7 @@ h1, h2{
     font-size: 110%;
     letter-spacing: 4px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
