@@ -373,7 +373,8 @@ hr {
     .form-section {
         box-sizing: border-box;
         display: flex;
-        height: 80vh;
+        background-position: center;
+        height: 900px;
     }
 
     .signup-form {
