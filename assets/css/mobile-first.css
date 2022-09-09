@@ -377,9 +377,10 @@ hr {
     }
 
     .signup-form {
-        min-height: 50%;
-        position: relative;
-        margin: 20%;
+        margin: 150px 10% 0 0;
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
     }
 
 }
