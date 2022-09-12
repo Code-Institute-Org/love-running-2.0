@@ -47,7 +47,7 @@ h2 {
     font-size: 110%;
     letter-spacing: 4px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -145,19 +145,19 @@ h2 {
     justify-content: center;
 }
 
-#left-about {
+#about-part-one {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#right-about {
+#about-part-two {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#center-about {
+#about-image {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -169,22 +169,22 @@ hr {
     margin: 5px 0;
 }
 
-.left-about-heading {
+.about-part-one-heading {
     width: inherit;
     line-height: 20px;
     clear: both;
     margin-bottom: 20px;
 }
 
-.right-about-heading {
+.about-part-two-heading {
     width: inherit;
     line-height: 20px;
     clear: both;
     margin-bottom: 20px;
 }
 
-.left-about-heading p,
-.right-about-heading p {
+.about-part-one-heading p,
+.about-part-two-heading p {
     padding: 0 20px 0 20px;
 }
 
@@ -330,7 +330,7 @@ hr {
 
 
     #menu {
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: flex-end;
     }
 
@@ -360,12 +360,12 @@ hr {
         column-count: 3
     }
 
-    .left-about-heading,
-    .right-about-heading {
+    .about-part-one-heading,
+    .about-part-two-heading {
         width: 75%;
     }
 
-    .right-about-heading {
+    .about-part-two-heading {
         text-align: end;
         align-self: flex-end;
     }
@@ -392,20 +392,20 @@ hr {
         flex-direction: row;
     }
 
-    #center-about {
+    #about-image {
         order: 0
     }
 
-    #right-about {
+    #about-part-two {
         order: 1;
         align-items: flex-end;
     }
 
-    .right-about-heading {
+    .about-part-two-heading {
         align-self: flex-start;
     }
 
-    .left-about-heading {
+    .about-part-one-heading {
         align-self: flex-end;
     }
 
@@ -435,8 +435,8 @@ hr {
 
 @media screen and (min-width: 1200px) {
 
-    .left-about-heading,
-    .right-about-heading {
+    .about-part-one-heading,
+    .about-part-two-heading {
         width: 60%;
     }
 
