@@ -327,7 +327,6 @@ hr {
 
     #menu {
         flex-direction: row;
-        justify-content: flex-end;
     }
 
     #photo {
