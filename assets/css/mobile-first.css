@@ -172,14 +172,12 @@ hr {
 .about-part-one-heading {
     width: inherit;
     line-height: 20px;
-    clear: both;
     margin-bottom: 20px;
 }
 
 .about-part-two-heading {
     width: inherit;
     line-height: 20px;
-    clear: both;
     margin-bottom: 20px;
 }
 
@@ -263,7 +261,6 @@ hr {
 /* Gallery Photos */
 
 #photo {
-    clear: both;
     line-height: 0;
     column-count: 1;
     column-gap: 0px;
@@ -276,7 +273,6 @@ hr {
 /* Form */
 
 .form-section {
-    clear: left;
     background: url("../images/signup-image.webp");
     background-size: cover;
     background-position: 75%;
