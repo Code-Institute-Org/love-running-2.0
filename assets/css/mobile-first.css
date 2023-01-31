@@ -214,8 +214,7 @@ hr {
     border-radius: 50%;
 }
 
-/* Event times */
-
+/* Responsive Times without media query */
 #times {
     background-image: url('../images/dublin-city.webp');
     background-repeat: no-repeat;
@@ -224,7 +223,8 @@ hr {
     width: 100%;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #times div {
@@ -233,6 +233,8 @@ hr {
     padding: 15px;
     text-align: center;
     border: 2px solid white;
+    flex-basis: 200px;
+    flex-grow: 1;
 }
 
 #times h2 {
@@ -365,15 +367,7 @@ hr {
         align-self: flex-end;
     }
 
-    #times {
-        display: flex;
-        flex-direction: row;
-    }
 
-    #times div {
-        flex-grow: 1;
-        height: 300px;
-    }
 
     .form-section {
         box-sizing: border-box;
