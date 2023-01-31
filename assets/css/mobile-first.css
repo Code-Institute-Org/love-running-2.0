@@ -25,8 +25,8 @@ main {
 
 header {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: baseline;
     position: fixed;
     z-index: 2;
     width: 100%;
