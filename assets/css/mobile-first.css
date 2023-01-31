@@ -12,7 +12,12 @@ body {
     box-sizing: border-box;
     min-height: 100vh;
     position: relative;
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 
@@ -36,29 +41,22 @@ h2 {
     color: #252525;
 }
 
-#logo {
-    font-size: 280%;
-    margin-left: 30px;
-}
-
 /* navigation links */
 
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 #logo {
-    line-height: 75px;
+    display: none;
 }
 
 #menu li {
     list-style-type: none;
-    margin-right: 30px;
 }
 
 #menu a {
@@ -323,7 +321,12 @@ hr {
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-
+    #logo {
+        display: block;    
+        line-height: 75px; 
+        font-size: 280%;
+        margin-left: 30px;
+    }
 
     #menu {
         flex-direction: row;
@@ -334,8 +337,6 @@ hr {
     }
 
     footer {
-        position: absolute;
-        bottom: 0;
         width: 100%;
     }
 }
