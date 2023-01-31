@@ -326,8 +326,8 @@ hr {
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
     #logo {
-        display: block;    
-        line-height: 75px; 
+        display: block;
+        line-height: 75px;
         font-size: 280%;
         margin-left: 30px;
     }
@@ -363,6 +363,16 @@ hr {
     .about-part-two-heading {
         text-align: end;
         align-self: flex-end;
+    }
+
+    #times {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #times div {
+        flex-grow: 1;
+        height: 300px;
     }
 
     .form-section {
@@ -406,16 +416,6 @@ hr {
 
     #circle-container {
         width: 300px;
-        height: 300px;
-    }
-
-    #times {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #times div {
-        flex-grow: 1;
         height: 300px;
     }
 
