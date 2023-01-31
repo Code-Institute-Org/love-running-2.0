@@ -347,11 +347,6 @@ hr {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    header {
-        flex-direction: row;
-        align-items: flex-end;
-    }
-
     #cover-text {
         width: 300px;
     }
