@@ -209,7 +209,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('../images/ethos-center-image.jpg') no-repeat top center;
+    background: url('../images/ethos-center-image.jpg') no-repeat top center / cover;
     height: 100%;
     border-radius: 50%;
 }
