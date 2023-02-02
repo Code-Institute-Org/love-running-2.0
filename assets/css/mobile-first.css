@@ -339,7 +339,7 @@ hr {
 @media screen and (min-width: 576px) {
     header {
         justify-content: space-between;
-        padding: 0.5rem 30px;        
+        padding: 0.5rem 1rem;        
     }
 
     main {
