@@ -18,7 +18,7 @@ body {
 }
 
 main {
-    padding-top: 2.25rem; /* to make space for navbar above content */
+    margin-top: 91px; /* to make space for navbar above content */
     flex: 1 0 auto;
     /* so we can use flex-grow for child elements if the page is not filled */
     display: flex;
@@ -30,9 +30,7 @@ main {
 
 header {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding: 0.5rem 0;
+    flex-direction: column;
     position: fixed;
     z-index: 2;
     width: 100%;
@@ -42,6 +40,7 @@ header {
 
 header a {
     text-decoration: none;
+    text-align: center;
 }
 
 h1,
@@ -58,16 +57,15 @@ h2 {
     font-size: 110%;
     letter-spacing: 4px;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-#logo {
-    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
 }
 
 #menu li {
     list-style-type: none;
+    line-height: 20px;
+    margin: 1em auto;
 }
 
 #menu a {
@@ -124,21 +122,15 @@ h2 {
     font-family: Oswald;
     text-transform: uppercase;
     letter-spacing: 4px;
-
     width: 80%;
     height: 200px;
-
     padding-top: 40px;
     padding-left: 10px;
-
     background-color: rgba(241, 109, 107, .7);
-
     bottom: 30px;
     right: 20px;
     left: 0;
-
     position: absolute;
-
 }
 
 /* Club ethos */
@@ -293,7 +285,6 @@ hr {
 }
 
 .signup-form {
-    /* margin: 20px 10% 0 10%; */
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
     padding: 30px;
@@ -337,21 +328,6 @@ hr {
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-    header {
-        justify-content: space-between;
-        padding: 0.5rem 1rem;        
-    }
-
-    main {
-        padding-top: 91px; /* This measurement comes from devtools, calculated height of the navbar */
-    }
-
-    #logo {
-        display: block;
-        line-height: 75px;
-        font-size: 280%;
-    }
-
     #photo {
         column-count: 2
     }
@@ -363,6 +339,21 @@ hr {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo {
+        margin: 0 0.5em;
+        line-height: 75px;
+        font-size: 280%;
+    }
+
+    #menu li {
+        margin: 2em 1em;
+    }
+
     #cover-text {
         width: 300px;
     }
@@ -381,8 +372,6 @@ hr {
         align-self: flex-end;
     }
 
-
-
     .form-section {
         box-sizing: border-box;
         display: flex;
@@ -396,7 +385,6 @@ hr {
         position: absolute;
         left: 10%;
     }
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -437,7 +425,6 @@ hr {
 }
 
 @media screen and (min-width: 1200px) {
-
     .about-part-one-heading,
     .about-part-two-heading {
         width: 60%;
@@ -450,5 +437,4 @@ hr {
     #menu {
         justify-content: space-between;
     }
-
 }
