@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -35,7 +36,8 @@ header {
     position: fixed;
     z-index: 2;
     width: 100%;
-    background-color: #cccccc90;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 #252525;
 }
 
 header a {
@@ -337,6 +339,7 @@ hr {
 @media screen and (min-width: 576px) {
     header {
         justify-content: space-between;
+        padding: 0.5rem 30px;        
     }
 
     main {
@@ -347,7 +350,6 @@ hr {
         display: block;
         line-height: 75px;
         font-size: 280%;
-        margin-left: 30px;
     }
 
     #photo {
